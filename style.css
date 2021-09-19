@@ -1,0 +1,137 @@
+body {
+  background-color: cyan;
+}
+
+@media (max-width:450px){
+  .font{
+       font-size :70px !important;
+  }
+
+  .contforclock{
+    height: 30vh !important;
+  }
+
+ .buttonscont{
+    flex-direction:column !important;
+    align-items: center;
+  }
+
+  .buttonyellow{
+    margin-top: 2vh;
+  }
+
+  .buttonyellow:hover{
+    width: 40vw !important;
+  border-radius: 20vw !important;
+}
+
+svg:hover {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+}
+
+
+
+.font {
+  color: white;
+  /* height: 15rem;
+  line-height: 15rem; */
+  font-size: 16vw  ;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.name{
+  position: absolute;
+  top: 1rem;
+  text-transform: uppercase;
+  color: rgb(247, 11, 176);
+  letter-spacing: 0.8rem;
+}
+
+
+/* Spacing transition on hover */
+
+.spacingtrans {
+  transition: all 500ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 100ms;
+}
+
+.spacingtrans:hover {
+  letter-spacing: 2rem;
+}
+
+/* Container for clock and text */
+
+.contforclock {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+/* Container for Buttons */
+
+.buttonscont {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.buttonyellow{
+  border: none;
+  height: 13vw;
+  width: 13vw;
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: all 300ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 4.5vw;
+  margin-right: 4.5vw;
+  
+}
+
+.buttonyellow:disabled{
+  
+  background-color: rgb(245, 245, 167);
+
+}
+
+.buttonyellow:hover {
+  width: 25vw;
+  border-radius: 20vw;
+}
+
+.buttonyellow:active {
+  background-color: rgb(248, 122, 122);
+}
+
+svg {
+  height: 5vw;
+  width: 5vw;
+ 
+  transition: all 300ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+svg:hover {
+  width: 10vw;
+  height: 10vw;
+}
+
+
