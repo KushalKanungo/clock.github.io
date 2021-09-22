@@ -1,137 +1,140 @@
 body {
-  background-color: cyan;
+
+  background: rgb(35,231,222);
+background: linear-gradient(180deg, rgba(35,231,222,1) 0%, rgba(0,150,240,1) 100%);
 }
 
-@media (max-width:450px){
-  .font{
-       font-size :70px !important;
-  }
-
-  .contforclock{
-    height: 30vh !important;
-  }
-
- .buttonscont{
-    flex-direction:column !important;
-    align-items: center;
-  }
-
-  .buttonyellow{
-    margin-top: 2vh;
-  }
-
-  .buttonyellow:hover{
-    width: 40vw !important;
-  border-radius: 20vw !important;
-}
-
-svg:hover {
-  width: 80px !important;
-  height: 80px !important;
-}
-
-}
-
-
-
-.font {
-  color: white;
-  /* height: 15rem;
-  line-height: 15rem; */
-  font-size: 16vw  ;
-  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.half {
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  
 }
 
-.name{
-  position: absolute;
-  top: 1rem;
-  text-transform: uppercase;
-  color: rgb(247, 11, 176);
-  letter-spacing: 0.8rem;
+.icons{
+font-size: 3rem;
+color:black
 }
 
+@media screen and (max-width: 900px) {
+  .buttonyellow {
+    height: 7rem !important;
+    width: 7rem !important;
+  }
 
-/* Spacing transition on hover */
+  .buttonyellow:hover {
+    width: 14rem !important;
+    border-radius: 18rem;
+  }
 
-.spacingtrans {
-  transition: all 500ms;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-delay: 100ms;
+  .font{
+    font-size: 6rem !important;
+  }
+
+  .icons{
+    font-size: 2rem;
+    color:black
+    }
+
+    .font:hover{
+      letter-spacing: 1.5rem !important;
+      text-align: center !important;
+    }
+
+}
+@media screen and (max-width: 575px) and (min-height:500px) {
+  .buttoncontainer {
+    flex-direction: column;
+    justify-content: space-evenly !important;
+  }
+
+  .buttonyellow {
+    
+    height: 4rem !important;
+    width: 14rem !important;
+    border-radius: 18rem !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  }
+
+  .font{
+    font-size: 6rem !important;
+    
+  }
+  .font:hover{
+    letter-spacing: 0.5rem !important;
+    text-align: center !important;
+  }
+
+
+}
+@media screen and (max-width:555px) and (max-height:500px) {
+
+   .buttonyellow {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+
+  .buttonyellow:hover {
+    width: 12rem !important;
+    border-radius: 18rem;
+  }
+  .font{
+    font-size: 4rem !important;
+    letter-spacing: normal !important;
+  }
 }
 
-.spacingtrans:hover {
-  letter-spacing: 2rem;
-}
-
-/* Container for clock and text */
-
-.contforclock {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-
-/* Container for Buttons */
-
-.buttonscont {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-
-.buttonyellow{
+.buttonyellow {
   border: none;
-  height: 13vw;
-  width: 13vw;
-  min-height: 100px;
-  min-width: 100px;
+  height: 11rem;
+  width: 11rem;
+
   border-radius: 50%;
   background-color: yellow;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   transition: all 300ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  font-size: 1.8rem;
+  /* transition-delay: 100ms; */
   text-transform: uppercase;
   color: black;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-left: 4.5vw;
-  margin-right: 4.5vw;
-  
-}
-
-.buttonyellow:disabled{
-  
-  background-color: rgb(245, 245, 167);
-
 }
 
 .buttonyellow:hover {
-  width: 25vw;
-  border-radius: 20vw;
+  width: 25rem;
+  border-radius: 18rem;
 }
 
-.buttonyellow:active {
-  background-color: rgb(248, 122, 122);
+
+.buttonyellow:active{
+
+  background-color: rgb(197, 255, 179);
 }
 
-svg {
-  height: 5vw;
-  width: 5vw;
- 
-  transition: all 300ms;
+.buttoncontainer {
+  display: flex;
+  height: 50vh;
+}
+
+.font{
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10rem;
+ text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ transition: all 500ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 100ms;
+ user-select: none;
 }
 
-svg:hover {
-  width: 10vw;
-  height: 10vw;
+.font:hover{
+  letter-spacing: 2rem;
+  text-align: center !important;
+}
+
+.greencolor{
+  background-color: green !important;
 }
 
 

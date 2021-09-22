@@ -4,7 +4,7 @@ var inmin = 0;
 var inhr = 0;
 var stopwatchTime = "";
 let check = 1;
-
+let check_play_button=1;
 // This function will add a 0 if the number is smaller than 10
 
 function addZero(value) {
@@ -27,9 +27,18 @@ function currtime() {
  
 }
 
+function checker(value){
+if(value==1){
+  document.getElementById("play").classList.add("greencolor");
+}
+else
+document.getElementById("play").classList.remove("greencolor");
+}
+
 // It will play the stop watch or clock
 
 function play() {
+
   stopclock();
   if (check == 0) {
     clearInterval(stopwatchInterval);
@@ -68,8 +77,7 @@ function stopwatch() {
     }
     if (inmin == 60) {
       inhr = 1 + inhr;
-
-      inmin = 0;
+ inmin = 0;
     }
 
     stopwatchTime = addZero(inhr) + ":" + addZero(inmin) + ":" + addZero(insec);
@@ -83,7 +91,7 @@ function stopwatch() {
 function stopwatchbutton() {
   stopclock();
   if (check == 1) {
-    document.getElementById("stopwatch").style.backgroundColor = "green";
+    document.getElementById("stopwatch").style.backgroundColor = "#5bff00";
     document.getElementById("timer").innerText = "00:00:00";
     insec=0;
     inmin=0;
